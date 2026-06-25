@@ -1,74 +1,31 @@
-# PRODIGY_CS_02 - Pixel Manipulation for Image Encryption
+# Pixel Manipulation for Image Encryption
 
-## Overview
-
-This project is developed as part of the Prodigy InfoTech Cyber Security Internship.
-
-The application encrypts and decrypts images using pixel manipulation techniques. A secret key is applied to RGB pixel values during encryption and reversed during decryption to restore the original image.
+A simple image encryption and decryption tool developed using Python and Pillow.
 
 ## Features
 
-* Image Encryption
-* Image Decryption
-* Pixel Value Manipulation
-* First Pixel Comparison for Verification
-* Original vs Encrypted vs Decrypted Image Visualization
-* User-Friendly Menu Driven Program
+- Encrypt images using pixel value manipulation
+- Decrypt encrypted images
+- Fast and lightweight
+- Beginner-friendly cybersecurity project
 
 ## Technologies Used
 
-* Python
-* Pillow (PIL)
-* Matplotlib
+- Python
+- Pillow (PIL)
 
-## Working Principle
+## Working
 
-### Encryption
+Encryption:
+Pixel Value = (Original Value + Key) % 256
 
-Each RGB value is modified using:
+Decryption:
+Pixel Value = (Encrypted Value - Key) % 256
 
-Encrypted Pixel = (Original Pixel + Key) % 256
+## Output Files
 
-### Decryption
-
-Original Pixel = (Encrypted Pixel - Key) % 256
-
-## Project Structure
-
-Pixel-Image-Encryption/
-
-├── image_encryptor.py
-
-├── sample.jpg
-
-├── encrypted_image.png
-
-├── decrypted_image.png
-
-├── README.md
-
-## Installation
-
-pip install pillow matplotlib
-
-## Run
-
-python image_encryptor.py
-
-## Output
-
-* Generates encrypted_image.png
-* Generates decrypted_image.png
-* Displays Original, Encrypted, and Decrypted Images
-* Shows Pixel Value Changes
-
-## Learning Outcomes
-
-* Image Processing Fundamentals
-* Pixel-Level Manipulation
-* Basic Cryptography Concepts
-* Python File Handling
-* Security-Oriented Programming
+- encrypted_image.png
+- decrypted_image.png
 
 ## Author
 
